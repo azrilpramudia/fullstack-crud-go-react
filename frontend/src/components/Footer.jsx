@@ -22,12 +22,6 @@ const Footer = () => {
           >
             About
           </a>
-          <a
-            href="mailto:support@example.com"
-            className="hover:text-blue-600 transition"
-          >
-            Contact
-          </a>
         </div>
       </div>
     </footer>
