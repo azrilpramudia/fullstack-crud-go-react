@@ -76,4 +76,4 @@ The React app will be available at: [http://localhost:5173](http://localhost:517
 ---
 
 ## 🎉 Happy Coding!
-Made with ❤️ by [@azrilpramudia](https://github.com/azrilpramudia) & [@indrassuliwa](https://github.com/indrassuliwa)
+Made with ❤️ by [@azrilpramudia](https://github.com/azrilpramudia) & [@indrassuliwa1](https://github.com/indrassuliwa1)
