@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import AddData from "./pages/AddData";
 import ViewData from "./pages/ViewData";
+import EditData from "./pages/EditData";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/add" element={<AddData />} />
         <Route path="/view" element={<ViewData />} />
+        <Route path="/edit" element={<EditData />} />
       </Routes>
     </>
   );
