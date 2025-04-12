@@ -9,7 +9,7 @@ const Navbar = () => {
       <figure>
         <figcaption>
           <Link to="/" className="text-xl font-bold">
-            Logo
+            CRUD App
           </Link>
         </figcaption>
       </figure>
@@ -23,23 +23,30 @@ const Navbar = () => {
         ☰
       </button>
 
-      {/* Navigation Links */}
+      {/* Navigation Links as Buttons */}
       <nav
-        className={`
-          flex-col items-center gap-4 py-4 bg-white w-full absolute left-0 top-[8vh] shadow-md
-          transition-all duration-300 ease-in-out
+        className={`flex-col items-center gap-2 py-2 w-full absolute left-0 top-[8vh] 
+          transition-all duration-300 ease-in-out bg-transparent
           ${
             isOpen
-              ? "flex opacity-100 translate-y-0"
+              ? "flex opacity-100 translate-y-0 bg-white shadow-md"
               : "hidden opacity-0 -translate-y-2"
           }
-          md:static md:flex md:flex-row md:w-auto md:gap-5 md:shadow-none md:opacity-100 md:translate-y-0
+          md:static md:flex md:flex-row md:w-auto md:gap-3 md:shadow-none md:opacity-100 md:translate-y-0 md:bg-transparent
         `}
       >
-        <Link to="/add" onClick={() => setIsOpen(false)}>
+        <Link
+          to="/add"
+          onClick={() => setIsOpen(false)}
+          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+        >
           Add Data
         </Link>
-        <Link to="/view" onClick={() => setIsOpen(false)}>
+        <Link
+          to="/view"
+          onClick={() => setIsOpen(false)}
+          className="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300 transition"
+        >
           View Data
         </Link>
       </nav>
