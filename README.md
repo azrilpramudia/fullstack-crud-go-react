@@ -1,11 +1,12 @@
-# Fullstack Golang React + CRUD
+# Fullstack Golang React Crud App
 ## Tech Stack
-**Backend**
+1. **Backend (GO)**
 - Golang
+- Mysql
 
 <br>
 
-**Frontend**
+2. **Frontend (React)**
 - React
 - Vite
 - Tailwind
@@ -16,6 +17,14 @@
 
 **With SSH**
 > `git@github.com:azrilpramudia/fullstack-crud-go-react.git`
+
+## Installation
+1. Frontend
+> `npm install`
+
+<br>
+
+> `npm run dev`
 
 ## Rules Branch
 **Don't Push to main branch**
