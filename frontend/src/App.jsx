@@ -4,6 +4,7 @@ import AddData from "./pages/AddData";
 import ViewData from "./pages/ViewData";
 import EditData from "./pages/EditData";
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/view" element={<ViewData />} />
         <Route path="/edit" element={<EditData />} />
       </Routes>
+      <Footer />
     </>
   );
 }
