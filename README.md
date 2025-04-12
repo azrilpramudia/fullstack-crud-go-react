@@ -10,7 +10,6 @@ A fullstack CRUD application using **Golang (backend)** and **React + Vite + Tai
 ### 🔧 Backend (GO)
 - Golang
 - MySQL
-- Docker (optional for containerization)
 
 ### 🎨 Frontend (React)
 - React
@@ -37,10 +36,9 @@ git clone git@github.com:azrilpramudia/fullstack-crud-go-react.git
 ## ⚙️ Installation
 
 ### 1. Backend
-Make sure Docker is installed. Then run:
 
 ```bash
-docker-compose up go-app
+go run main.go
 ```
 
 > This will run the Golang app along with MySQL.
@@ -68,7 +66,6 @@ The React app will be available at: [http://localhost:5173](http://localhost:517
 
 - 🚫 **Don't push directly to `main`**
 - ✅ **Create a new branch** and open a **Pull Request**
-- 🧪 Test your changes before creating PR
 
 ---
 
@@ -78,11 +75,5 @@ The React app will be available at: [http://localhost:5173](http://localhost:517
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
 ## 🎉 Happy Coding!
-Made with ❤️ by [@azrilpramudia](https://github.com/azrilpramudia)
+Made with ❤️ by [@azrilpramudia](https://github.com/azrilpramudia) & [@indrassuliwa](https://github.com/indrassuliwa)
