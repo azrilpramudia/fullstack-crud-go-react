@@ -17,6 +17,11 @@ func NewIndexEployee() func(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		tmpl.Execute(w, nil)
+		err = tmpl.Execute(w, nil)
+		if err != nil {
+			w.Write([]byte(err.Error()))
+			w.WriteHeader(http.StatusInternalServerError)
+			return
+		}
 	}
 }
