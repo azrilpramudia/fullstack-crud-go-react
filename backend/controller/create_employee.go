@@ -21,7 +21,7 @@ func NewCreateEployeeController(db *sql.DB) func(w http.ResponseWriter, r *http.
 				w.WriteHeader(http.StatusInternalServerError)
 				return
 			}
-			w.Write([]byte("test post"))
+			http.Redirect(w, r, "/employe", http.StatusMovedPermanently)
 
 		} else if r.Method == "GET" {
 			fp := filepath.Join("views", "create.html")

@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>List Employee</title>
+    <title>From Update Karyawan</title>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-primary">
@@ -18,32 +18,32 @@
     </nav>
 
     <div class="container my-5">
-        <div class="d-flex justify-content-between">
-        <h3>List Employee</h3>
-        <a href="/employe/create" class="btn btn-primary">Tambah Data</a>
-    </div>   
-    
-    <table class="table my-5">
-        <thead>
-          <tr>
-            <td>Nama</td>
-            <td>NPWP</td>
-            <td>Alamat</td>
-            <td>Action</td>
-          </tr>
-        </thead>
-        <tbody>
-            {{range $index, $employee := .employees}}
-            <tr>
-                <td>{{$employee.Name}}</td>
-                <td>{{$employee.NPWP}}</td>
-                <td>{{$employee.Address}}</td>
-                <td>
-                    <a href="/employe/update?id={{$employee.ID}}" class="btn btn-warning btn-sm">Edit</a>
-                    <a href="/employe/delete?id={{$employee.ID}}" class="btn btn-danger btn-sm">Delete</a>
-                </td>
-            </tr>
-            {{end}}
+        <div class="d-flex justify-content-between mb-4">
+        <h3>Data Karyawan</h3>
+        </div>
+
+
+        <form action="/employe/update?id={{.employee.ID}}" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama Karyawan</label>
+              <input type="text" name="name" id="name" class="form-control" value="{{.employee.Name}}">
+            </div>
+          
+            <div class="mb-3">
+              <label for="npwp" class="form-label">NPWP</label>
+              <input type="text" name="npwp" id="npwp" class="form-control" value="{{.employee.NPWP}}">
+            </div>
+          
+            <div class="mb-3">
+              <label for="address" class="form-label">Alamat</label>
+              <textarea id="address" name="address" class="form-control" value="{{.employee.Address}}">
+
+              </textarea>
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Edit</button>
+          </form>
+          
 
     <!-- Optional JavaScript; choose one of the two! -->
 
