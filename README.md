@@ -1,4 +1,3 @@
-
 # 🚀 Fullstack Golang React CRUD App
 
 A fullstack CRUD application using **Golang (backend)** and **React + Vite + Tailwind CSS (frontend)**. This project allows you to add, view, edit, and delete data through a clean and modern interface.
@@ -71,9 +70,9 @@ The React app will be available at: [http://localhost:5173](http://localhost:517
 
 ## 📸 Preview
 
-> (Add screenshots here if available)
+> Coming Soon
 
 ---
 
 ## 🎉 Happy Coding!
-Made with ❤️ by [@azrilpramudia](https://github.com/azrilpramudia) & [@indrassuliwa1](https://github.com/indrassuliwa1)
+Made with by [@azrilpramudia](https://github.com/azrilpramudia) & [@indrassuliwa1](https://github.com/indrassuliwa1)
